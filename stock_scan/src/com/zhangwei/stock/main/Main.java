@@ -12,6 +12,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
+import com.zhangwei.stock.net.SouHuStockHelper;
+import com.zhangwei.stock.windows.TipWindowHelper;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -33,7 +36,7 @@ public class Main {
 		//JOptionPane.showMessageDialog(null,"sample dialog !\nddd\n中文、n\n", "title", JOptionPane.DEFAULT_OPTION);
 	
 	
-		ArrayList<String> urls = new ArrayList<String>();
+/*		ArrayList<String> urls = new ArrayList<String>();
 		urls.add("http://www.sina.com");
 		urls.add("http://www.baidu.com");
 		
@@ -44,7 +47,9 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	    TipWindowHelper.getInstance().show("str_title2", "str_action2", "str_content_title2", "str_content2", urls);
+	    TipWindowHelper.getInstance().show("str_title2", "str_action2", "str_content_title2", "str_content2", urls);*/
+		SouHuStockHelper.getInstance().get_ranklist_from_souhu();
+	
 	}
 
 }

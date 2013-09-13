@@ -1,4 +1,4 @@
-package com.zhangwei.stock.main;
+package com.zhangwei.stock.windows;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
